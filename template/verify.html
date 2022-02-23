@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>license校验</title>
+</head>
+<body>
+
+<form action="/hardwareMsg/download" method="get" enctype="multipart/form-data">
+    <input type="submit" value="下载硬件指纹">
+</form>
+<br><br>
+<form action="/license/upload" method="post" enctype="multipart/form-data">
+    证书文件: <input type="file" name="file"><br>
+    <input type="submit" value="上传license">
+</form>
+<br><br>
+<form action="/license/verify" method="get" enctype="multipart/form-data">
+    <input type="text" name="product_code">
+    <input type="submit" value="验证license">
+</form>
+</body>
+</html>
